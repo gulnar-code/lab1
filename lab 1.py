@@ -1,11 +1,8 @@
-x=1
+x=0.7
 n=1
-f=0
-k=1
-m=-1
-while k<=2*n-1:
-    m=-1*m
-    h=m*((x**k)/k)
-    f=f+h
-    k=k+1
-    print(h)
+p=0
+eps=0.01
+while x**n/n>eps:
+    p=p-x**n/n
+    n=n+1
+print(p)
